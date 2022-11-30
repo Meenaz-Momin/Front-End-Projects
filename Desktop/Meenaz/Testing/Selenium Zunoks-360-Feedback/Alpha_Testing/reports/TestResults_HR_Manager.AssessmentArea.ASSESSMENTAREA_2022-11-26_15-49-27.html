@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-11-26 15:49:27</p>
+                <p class='attribute'><strong>Duration: </strong>26.99 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 4, Pass: 1, Error: 3</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>HR_Manager.AssessmentArea.ASSESSMENTAREA</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_255Title</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_256Title</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"#\:ro\: > button > svg"}
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x563d1a23e533 <unknown>
+#1 0x563d19f9d1e8 <unknown>
+#2 0x563d19fd32d7 <unknown>
+#3 0x563d19fd34a1 <unknown>
+#4 0x563d1a006494 <unknown>
+#5 0x563d19ff0f6d <unknown>
+#6 0x563d1a004224 <unknown>
+#7 0x563d19ff0e33 <unknown>
+#8 0x563d19fc671a <unknown>
+#9 0x563d19fc7875 <unknown>
+#10 0x563d1a282e1d <unknown>
+#11 0x563d1a286751 <unknown>
+#12 0x563d1a26d07e <unknown>
+#13 0x563d1a287388 <unknown>
+#14 0x563d1a261fe0 <unknown>
+#15 0x563d1a2a3748 <unknown>
+#16 0x563d1a2a38c8 <unknown>
+#17 0x563d1a2bd70d <unknown>
+#18 0x7f1494920609 <unknown>
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/AssessmentArea.py", line 157, in test_256Title
+    cancel = driver.find_element(
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 861, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"#\:ro\: > button > svg"}
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x563d1a23e533 <unknown>
+#1 0x563d19f9d1e8 <unknown>
+#2 0x563d19fd32d7 <unknown>
+#3 0x563d19fd34a1 <unknown>
+#4 0x563d1a006494 <unknown>
+#5 0x563d19ff0f6d <unknown>
+#6 0x563d1a004224 <unknown>
+#7 0x563d19ff0e33 <unknown>
+#8 0x563d19fc671a <unknown>
+#9 0x563d19fc7875 <unknown>
+#10 0x563d1a282e1d <unknown>
+#11 0x563d1a286751 <unknown>
+#12 0x563d1a26d07e <unknown>
+#13 0x563d1a287388 <unknown>
+#14 0x563d1a261fe0 <unknown>
+#15 0x563d1a2a3748 <unknown>
+#16 0x563d1a2a38c8 <unknown>
+#17 0x563d1a2bd70d <unknown>
+#18 0x7f1494920609 <unknown>
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_blankTitle</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium capitalize ml-6 px-6 css-1ezic79" tabindex="0" type="button">...</button> is not clickable at point (831, 201). Other element would receive the click: <h2 class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root dailog-heading css-xenwt2" id=":rl:">...</h2>
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x563d1a23e533 <unknown>
+#1 0x563d19f9d1e8 <unknown>
+#2 0x563d19fda972 <unknown>
+#3 0x563d19fd84d2 <unknown>
+#4 0x563d19fd5b64 <unknown>
+#5 0x563d19fd4902 <unknown>
+#6 0x563d19fc84a9 <unknown>
+#7 0x563d19ff0f42 <unknown>
+#8 0x563d19fc7d63 <unknown>
+#9 0x563d19ff104e <unknown>
+#10 0x563d1a004224 <unknown>
+#11 0x563d19ff0e33 <unknown>
+#12 0x563d19fc671a <unknown>
+#13 0x563d19fc7875 <unknown>
+#14 0x563d1a282e1d <unknown>
+#15 0x563d1a286751 <unknown>
+#16 0x563d1a26d07e <unknown>
+#17 0x563d1a287388 <unknown>
+#18 0x563d1a261fe0 <unknown>
+#19 0x563d1a2a3748 <unknown>
+#20 0x563d1a2a38c8 <unknown>
+#21 0x563d1a2bd70d <unknown>
+#22 0x7f1494920609 <unknown>
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/AssessmentArea.py", line 62, in test_blankTitle
+    newArea.click()
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 410, in _execute
+    return self._parent.execute(command, params)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium capitalize ml-6 px-6 css-1ezic79" tabindex="0" type="button">...</button> is not clickable at point (831, 201). Other element would receive the click: <h2 class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root dailog-heading css-xenwt2" id=":rl:">...</h2>
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x563d1a23e533 <unknown>
+#1 0x563d19f9d1e8 <unknown>
+#2 0x563d19fda972 <unknown>
+#3 0x563d19fd84d2 <unknown>
+#4 0x563d19fd5b64 <unknown>
+#5 0x563d19fd4902 <unknown>
+#6 0x563d19fc84a9 <unknown>
+#7 0x563d19ff0f42 <unknown>
+#8 0x563d19fc7d63 <unknown>
+#9 0x563d19ff104e <unknown>
+#10 0x563d1a004224 <unknown>
+#11 0x563d19ff0e33 <unknown>
+#12 0x563d19fc671a <unknown>
+#13 0x563d19fc7875 <unknown>
+#14 0x563d1a282e1d <unknown>
+#15 0x563d1a286751 <unknown>
+#16 0x563d1a26d07e <unknown>
+#17 0x563d1a287388 <unknown>
+#18 0x563d1a261fe0 <unknown>
+#19 0x563d1a2a3748 <unknown>
+#20 0x563d1a2a38c8 <unknown>
+#21 0x563d1a2bd70d <unknown>
+#22 0x7f1494920609 <unknown>
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_switchOff</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium capitalize ml-6 px-6 css-1ezic79" tabindex="0" type="button">...</button> is not clickable at point (831, 201). Other element would receive the click: <h2 class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root dailog-heading css-xenwt2" id=":rl:">...</h2>
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x563d1a23e533 <unknown>
+#1 0x563d19f9d1e8 <unknown>
+#2 0x563d19fda972 <unknown>
+#3 0x563d19fd84d2 <unknown>
+#4 0x563d19fd5b64 <unknown>
+#5 0x563d19fd4902 <unknown>
+#6 0x563d19fc84a9 <unknown>
+#7 0x563d19ff0f42 <unknown>
+#8 0x563d19fc7d63 <unknown>
+#9 0x563d19ff104e <unknown>
+#10 0x563d1a004224 <unknown>
+#11 0x563d19ff0e33 <unknown>
+#12 0x563d19fc671a <unknown>
+#13 0x563d19fc7875 <unknown>
+#14 0x563d1a282e1d <unknown>
+#15 0x563d1a286751 <unknown>
+#16 0x563d1a26d07e <unknown>
+#17 0x563d1a287388 <unknown>
+#18 0x563d1a261fe0 <unknown>
+#19 0x563d1a2a3748 <unknown>
+#20 0x563d1a2a38c8 <unknown>
+#21 0x563d1a2bd70d <unknown>
+#22 0x7f1494920609 <unknown>
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/AssessmentArea.py", line 177, in test_switchOff
+    newArea.click()
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 410, in _execute
+    return self._parent.execute(command, params)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium capitalize ml-6 px-6 css-1ezic79" tabindex="0" type="button">...</button> is not clickable at point (831, 201). Other element would receive the click: <h2 class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root dailog-heading css-xenwt2" id=":rl:">...</h2>
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x563d1a23e533 <unknown>
+#1 0x563d19f9d1e8 <unknown>
+#2 0x563d19fda972 <unknown>
+#3 0x563d19fd84d2 <unknown>
+#4 0x563d19fd5b64 <unknown>
+#5 0x563d19fd4902 <unknown>
+#6 0x563d19fc84a9 <unknown>
+#7 0x563d19ff0f42 <unknown>
+#8 0x563d19fc7d63 <unknown>
+#9 0x563d19ff104e <unknown>
+#10 0x563d1a004224 <unknown>
+#11 0x563d19ff0e33 <unknown>
+#12 0x563d19fc671a <unknown>
+#13 0x563d19fc7875 <unknown>
+#14 0x563d1a282e1d <unknown>
+#15 0x563d1a286751 <unknown>
+#16 0x563d1a26d07e <unknown>
+#17 0x563d1a287388 <unknown>
+#18 0x563d1a261fe0 <unknown>
+#19 0x563d1a2a3748 <unknown>
+#20 0x563d1a2a38c8 <unknown>
+#21 0x563d1a2bd70d <unknown>
+#22 0x7f1494920609 <unknown>
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 4, Pass: 1, Error: 3 -- Duration: 26.99 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

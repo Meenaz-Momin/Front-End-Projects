@@ -1,0 +1,585 @@
+
+Running tests... 
+----------------------------------------------------------------------
+ test_blankField (Login.LOGIN) ... OK (6.292843)s
+ test_enterkey (Login.LOGIN) ... FAIL (7.622662)s
+ test_invalidEmail (Login.LOGIN) ... OK (6.578281)s
+ test_invalidPassword (Login.LOGIN) ... OK (6.558743)s
+ test_validCredential (Login.LOGIN) ... OK (6.579648)s
+ test_BlankDescription (Competency.COMPETENCY) ... OK (6.455572)s
+ test_BlankTitle (Competency.COMPETENCY) ... OK (4.330802)s
+ test_BothBlankField (Competency.COMPETENCY) ... OK (15.037810)s
+ test_description255 (Competency.COMPETENCY) ... OK (8.924077)s
+ test_descriptionMoreThan255 (Competency.COMPETENCY) ... OK (19.517449)s
+ test_title255 (Competency.COMPETENCY) ... OK (9.111943)s
+ test_titleMoreThan255 (Competency.COMPETENCY) ... OK (19.498880)s
+ test_255Question (Questions.QUESTIONS) ... ERROR (16.237761)s
+ test_256Question (Questions.QUESTIONS) ... OK (18.562151)s
+ test_LikertResponse (Questions.QUESTIONS) ... OK (15.932652)s
+ test_MCQResponse (Questions.QUESTIONS) ... OK (15.313481)s
+ test_MultipleMCQResponse (Questions.QUESTIONS) ... OK (15.169508)s
+ test_allAssessment (Questions.QUESTIONS) ... ERROR (29.442656)s
+ test_blankAssessment (Questions.QUESTIONS) ... ERROR (3.087416)s
+ test_blankQuestion (Questions.QUESTIONS) ... ERROR (3.082538)s
+ test_blankResponseType (Questions.QUESTIONS) ... ERROR (3.088360)s
+ test_textResponse (Questions.QUESTIONS) ... ERROR (3.091062)s
+ test_yes_noResponse (Questions.QUESTIONS) ... ERROR (3.090208)s
+ test_blankContact (Employee.EMPLOYEE) ... OK (26.045382)s
+ test_blankDepartment (Employee.EMPLOYEE) ... OK (23.755513)s
+ test_blankDesignation (Employee.EMPLOYEE) ... OK (23.672760)s
+ test_blankEmail (Employee.EMPLOYEE) ... OK (25.548171)s
+ test_blankLM (Employee.EMPLOYEE) ... OK (23.567854)s
+ test_blankName (Employee.EMPLOYEE) ... OK (25.674740)s
+ test_blankRegion (Employee.EMPLOYEE) ... OK (25.854309)s
+ test_blankSM (Employee.EMPLOYEE) ... OK (23.666834)s
+ test_255Label (StandardResponse.STANDARDRESPONSE) ... OK (11.060029)s
+ test_256Label (StandardResponse.STANDARDRESPONSE) ... OK (10.874889)s
+ test_blankLabel (StandardResponse.STANDARDRESPONSE) ... OK (9.384221)s
+ test_negativeScore (StandardResponse.STANDARDRESPONSE) ... OK (9.540690)s
+ test_255Title (AssessmentArea.ASSESSMENTAREA) ... ERROR (10.779373)s
+ test_256Title (AssessmentArea.ASSESSMENTAREA) ... ERROR (10.670821)s
+ test_blankTitle (AssessmentArea.ASSESSMENTAREA) ... ERROR (3.046633)s
+ test_switchOff (AssessmentArea.ASSESSMENTAREA) ... ERROR (3.086647)s
+ test_255Title (Department.DEPARTMENT) ... FAIL (12.818361)s
+ test_256Title (Department.DEPARTMENT) ... OK (12.660083)s
+ test_blankTitle (Department.DEPARTMENT) ... OK (11.289243)s
+ test_switchOff (Department.DEPARTMENT) ... OK (11.434504)s
+ test_255Title (Designation.DESIGNATION) ... FAIL (12.776918)s
+ test_256Title (Designation.DESIGNATION) ... OK (12.646150)s
+ test_blankTitle (Designation.DESIGNATION) ... OK (11.264020)s
+ test_switchOff (Designation.DESIGNATION) ... OK (11.375764)s
+ test_255Category (Raters.RATERS) ... OK (10.484021)s
+ test_256Category (Raters.RATERS) ... OK (11.675427)s
+ test_blankCategory (Raters.RATERS) ... OK (9.440419)s
+ test_bothSwitchOff (Raters.RATERS) ... FAIL (8.545867)s
+ test_bothSwitchOn (Raters.RATERS) ... OK (9.586048)s
+ test_negativeRaters (Raters.RATERS) ... OK (9.537703)s
+
+======================================================================
+ERROR [16.237761s]: Questions.QUESTIONS.test_255Question
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/Questions.py", line 151, in test_255Question
+    cancel.click()
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 410, in _execute
+    return self._parent.execute(command, params)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x55ea11dfd533 <unknown>
+#1 0x55ea11b5c1e8 <unknown>
+#2 0x55ea11b5f0a7 <unknown>
+#3 0x55ea11b5ef4b <unknown>
+#4 0x55ea11b5f20c <unknown>
+#5 0x55ea11b93e96 <unknown>
+#6 0x55ea11b873a6 <unknown>
+#7 0x55ea11baff42 <unknown>
+#8 0x55ea11b86d63 <unknown>
+#9 0x55ea11bb004e <unknown>
+#10 0x55ea11bc3224 <unknown>
+#11 0x55ea11bafe33 <unknown>
+#12 0x55ea11b8571a <unknown>
+#13 0x55ea11b86875 <unknown>
+#14 0x55ea11e41e1d <unknown>
+#15 0x55ea11e45751 <unknown>
+#16 0x55ea11e2c07e <unknown>
+#17 0x55ea11e46388 <unknown>
+#18 0x55ea11e20fe0 <unknown>
+#19 0x55ea11e62748 <unknown>
+#20 0x55ea11e628c8 <unknown>
+#21 0x55ea11e7c70d <unknown>
+#22 0x7fa1b3cff609 <unknown>
+
+
+======================================================================
+ERROR [29.442656s]: Questions.QUESTIONS.test_allAssessment
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/Questions.py", line 286, in test_allAssessment
+    save.click()
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 410, in _execute
+    return self._parent.execute(command, params)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium px-6 css-2vl0rh" tabindex="0" type="submit">...</button> is not clickable at point (569, 603). Other element would receive the click: <li tabindex="-1" role="option" id=":r3m:-option-3" data-option-index="3" aria-disabled="false" aria-selected="false" class="MuiAutocomplete-option">...</li>
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x55ea11dfd533 <unknown>
+#1 0x55ea11b5c1e8 <unknown>
+#2 0x55ea11b99972 <unknown>
+#3 0x55ea11b974d2 <unknown>
+#4 0x55ea11b94b64 <unknown>
+#5 0x55ea11b93902 <unknown>
+#6 0x55ea11b874a9 <unknown>
+#7 0x55ea11baff42 <unknown>
+#8 0x55ea11b86d63 <unknown>
+#9 0x55ea11bb004e <unknown>
+#10 0x55ea11bc3224 <unknown>
+#11 0x55ea11bafe33 <unknown>
+#12 0x55ea11b8571a <unknown>
+#13 0x55ea11b86875 <unknown>
+#14 0x55ea11e41e1d <unknown>
+#15 0x55ea11e45751 <unknown>
+#16 0x55ea11e2c07e <unknown>
+#17 0x55ea11e46388 <unknown>
+#18 0x55ea11e20fe0 <unknown>
+#19 0x55ea11e62748 <unknown>
+#20 0x55ea11e628c8 <unknown>
+#21 0x55ea11e7c70d <unknown>
+#22 0x7fa1b3cff609 <unknown>
+
+
+======================================================================
+ERROR [3.087416s]: Questions.QUESTIONS.test_blankAssessment
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/Questions.py", line 216, in test_blankAssessment
+    newQuestion.click()
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 410, in _execute
+    return self._parent.execute(command, params)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium px-6 false css-1ezic79" tabindex="0" type="button">...</button> is not clickable at point (858, 420). Other element would receive the click: <div class="MuiGrid-root MuiGrid-container MuiGrid-item css-1ul47bz">...</div>
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x55ea11dfd533 <unknown>
+#1 0x55ea11b5c1e8 <unknown>
+#2 0x55ea11b99972 <unknown>
+#3 0x55ea11b974d2 <unknown>
+#4 0x55ea11b94b64 <unknown>
+#5 0x55ea11b93902 <unknown>
+#6 0x55ea11b874a9 <unknown>
+#7 0x55ea11baff42 <unknown>
+#8 0x55ea11b86d63 <unknown>
+#9 0x55ea11bb004e <unknown>
+#10 0x55ea11bc3224 <unknown>
+#11 0x55ea11bafe33 <unknown>
+#12 0x55ea11b8571a <unknown>
+#13 0x55ea11b86875 <unknown>
+#14 0x55ea11e41e1d <unknown>
+#15 0x55ea11e45751 <unknown>
+#16 0x55ea11e2c07e <unknown>
+#17 0x55ea11e46388 <unknown>
+#18 0x55ea11e20fe0 <unknown>
+#19 0x55ea11e62748 <unknown>
+#20 0x55ea11e628c8 <unknown>
+#21 0x55ea11e7c70d <unknown>
+#22 0x7fa1b3cff609 <unknown>
+
+
+======================================================================
+ERROR [3.082538s]: Questions.QUESTIONS.test_blankQuestion
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/Questions.py", line 76, in test_blankQuestion
+    newQuestion.click()
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 410, in _execute
+    return self._parent.execute(command, params)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium px-6 false css-1ezic79" tabindex="0" type="button">...</button> is not clickable at point (858, 420). Other element would receive the click: <div class="MuiGrid-root MuiGrid-container MuiGrid-item css-1ul47bz">...</div>
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x55ea11dfd533 <unknown>
+#1 0x55ea11b5c1e8 <unknown>
+#2 0x55ea11b99972 <unknown>
+#3 0x55ea11b974d2 <unknown>
+#4 0x55ea11b94b64 <unknown>
+#5 0x55ea11b93902 <unknown>
+#6 0x55ea11b874a9 <unknown>
+#7 0x55ea11baff42 <unknown>
+#8 0x55ea11b86d63 <unknown>
+#9 0x55ea11bb004e <unknown>
+#10 0x55ea11bc3224 <unknown>
+#11 0x55ea11bafe33 <unknown>
+#12 0x55ea11b8571a <unknown>
+#13 0x55ea11b86875 <unknown>
+#14 0x55ea11e41e1d <unknown>
+#15 0x55ea11e45751 <unknown>
+#16 0x55ea11e2c07e <unknown>
+#17 0x55ea11e46388 <unknown>
+#18 0x55ea11e20fe0 <unknown>
+#19 0x55ea11e62748 <unknown>
+#20 0x55ea11e628c8 <unknown>
+#21 0x55ea11e7c70d <unknown>
+#22 0x7fa1b3cff609 <unknown>
+
+
+======================================================================
+ERROR [3.088360s]: Questions.QUESTIONS.test_blankResponseType
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/Questions.py", line 315, in test_blankResponseType
+    newQuestion.click()
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 410, in _execute
+    return self._parent.execute(command, params)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium px-6 false css-1ezic79" tabindex="0" type="button">...</button> is not clickable at point (858, 420). Other element would receive the click: <div class="MuiGrid-root MuiGrid-container MuiGrid-item css-1ul47bz">...</div>
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x55ea11dfd533 <unknown>
+#1 0x55ea11b5c1e8 <unknown>
+#2 0x55ea11b99972 <unknown>
+#3 0x55ea11b974d2 <unknown>
+#4 0x55ea11b94b64 <unknown>
+#5 0x55ea11b93902 <unknown>
+#6 0x55ea11b874a9 <unknown>
+#7 0x55ea11baff42 <unknown>
+#8 0x55ea11b86d63 <unknown>
+#9 0x55ea11bb004e <unknown>
+#10 0x55ea11bc3224 <unknown>
+#11 0x55ea11bafe33 <unknown>
+#12 0x55ea11b8571a <unknown>
+#13 0x55ea11b86875 <unknown>
+#14 0x55ea11e41e1d <unknown>
+#15 0x55ea11e45751 <unknown>
+#16 0x55ea11e2c07e <unknown>
+#17 0x55ea11e46388 <unknown>
+#18 0x55ea11e20fe0 <unknown>
+#19 0x55ea11e62748 <unknown>
+#20 0x55ea11e628c8 <unknown>
+#21 0x55ea11e7c70d <unknown>
+#22 0x7fa1b3cff609 <unknown>
+
+
+======================================================================
+ERROR [3.091062s]: Questions.QUESTIONS.test_textResponse
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/Questions.py", line 362, in test_textResponse
+    newQuestion.click()
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 410, in _execute
+    return self._parent.execute(command, params)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium px-6 false css-1ezic79" tabindex="0" type="button">...</button> is not clickable at point (858, 420). Other element would receive the click: <div class="MuiGrid-root MuiGrid-container MuiGrid-item css-1ul47bz">...</div>
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x55ea11dfd533 <unknown>
+#1 0x55ea11b5c1e8 <unknown>
+#2 0x55ea11b99972 <unknown>
+#3 0x55ea11b974d2 <unknown>
+#4 0x55ea11b94b64 <unknown>
+#5 0x55ea11b93902 <unknown>
+#6 0x55ea11b874a9 <unknown>
+#7 0x55ea11baff42 <unknown>
+#8 0x55ea11b86d63 <unknown>
+#9 0x55ea11bb004e <unknown>
+#10 0x55ea11bc3224 <unknown>
+#11 0x55ea11bafe33 <unknown>
+#12 0x55ea11b8571a <unknown>
+#13 0x55ea11b86875 <unknown>
+#14 0x55ea11e41e1d <unknown>
+#15 0x55ea11e45751 <unknown>
+#16 0x55ea11e2c07e <unknown>
+#17 0x55ea11e46388 <unknown>
+#18 0x55ea11e20fe0 <unknown>
+#19 0x55ea11e62748 <unknown>
+#20 0x55ea11e628c8 <unknown>
+#21 0x55ea11e7c70d <unknown>
+#22 0x7fa1b3cff609 <unknown>
+
+
+======================================================================
+ERROR [3.090208s]: Questions.QUESTIONS.test_yes_noResponse
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/Questions.py", line 411, in test_yes_noResponse
+    newQuestion.click()
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 410, in _execute
+    return self._parent.execute(command, params)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium px-6 false css-1ezic79" tabindex="0" type="button">...</button> is not clickable at point (858, 420). Other element would receive the click: <div class="MuiGrid-root MuiGrid-container MuiGrid-item css-1ul47bz">...</div>
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x55ea11dfd533 <unknown>
+#1 0x55ea11b5c1e8 <unknown>
+#2 0x55ea11b99972 <unknown>
+#3 0x55ea11b974d2 <unknown>
+#4 0x55ea11b94b64 <unknown>
+#5 0x55ea11b93902 <unknown>
+#6 0x55ea11b874a9 <unknown>
+#7 0x55ea11baff42 <unknown>
+#8 0x55ea11b86d63 <unknown>
+#9 0x55ea11bb004e <unknown>
+#10 0x55ea11bc3224 <unknown>
+#11 0x55ea11bafe33 <unknown>
+#12 0x55ea11b8571a <unknown>
+#13 0x55ea11b86875 <unknown>
+#14 0x55ea11e41e1d <unknown>
+#15 0x55ea11e45751 <unknown>
+#16 0x55ea11e2c07e <unknown>
+#17 0x55ea11e46388 <unknown>
+#18 0x55ea11e20fe0 <unknown>
+#19 0x55ea11e62748 <unknown>
+#20 0x55ea11e628c8 <unknown>
+#21 0x55ea11e7c70d <unknown>
+#22 0x7fa1b3cff609 <unknown>
+
+
+======================================================================
+ERROR [10.779373s]: AssessmentArea.ASSESSMENTAREA.test_255Title
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/AssessmentArea.py", line 119, in test_255Title
+    cancel = driver.find_element(
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 861, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"#\:ro\: > button > svg"}
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x5643893b7533 <unknown>
+#1 0x5643891161e8 <unknown>
+#2 0x56438914c2d7 <unknown>
+#3 0x56438914c4a1 <unknown>
+#4 0x56438917f494 <unknown>
+#5 0x564389169f6d <unknown>
+#6 0x56438917d224 <unknown>
+#7 0x564389169e33 <unknown>
+#8 0x56438913f71a <unknown>
+#9 0x564389140875 <unknown>
+#10 0x5643893fbe1d <unknown>
+#11 0x5643893ff751 <unknown>
+#12 0x5643893e607e <unknown>
+#13 0x564389400388 <unknown>
+#14 0x5643893dafe0 <unknown>
+#15 0x56438941c748 <unknown>
+#16 0x56438941c8c8 <unknown>
+#17 0x56438943670d <unknown>
+#18 0x7fe7f6ebc609 <unknown>
+
+
+======================================================================
+ERROR [10.670821s]: AssessmentArea.ASSESSMENTAREA.test_256Title
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/AssessmentArea.py", line 157, in test_256Title
+    cancel = driver.find_element(
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 861, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"#\:ro\: > button > svg"}
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x5643893b7533 <unknown>
+#1 0x5643891161e8 <unknown>
+#2 0x56438914c2d7 <unknown>
+#3 0x56438914c4a1 <unknown>
+#4 0x56438917f494 <unknown>
+#5 0x564389169f6d <unknown>
+#6 0x56438917d224 <unknown>
+#7 0x564389169e33 <unknown>
+#8 0x56438913f71a <unknown>
+#9 0x564389140875 <unknown>
+#10 0x5643893fbe1d <unknown>
+#11 0x5643893ff751 <unknown>
+#12 0x5643893e607e <unknown>
+#13 0x564389400388 <unknown>
+#14 0x5643893dafe0 <unknown>
+#15 0x56438941c748 <unknown>
+#16 0x56438941c8c8 <unknown>
+#17 0x56438943670d <unknown>
+#18 0x7fe7f6ebc609 <unknown>
+
+
+======================================================================
+ERROR [3.046633s]: AssessmentArea.ASSESSMENTAREA.test_blankTitle
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/AssessmentArea.py", line 62, in test_blankTitle
+    newArea.click()
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 410, in _execute
+    return self._parent.execute(command, params)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium capitalize ml-6 px-6 css-1ezic79" tabindex="0" type="button">...</button> is not clickable at point (831, 201). Other element would receive the click: <h2 class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root dailog-heading css-xenwt2" id=":rl:">...</h2>
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x5643893b7533 <unknown>
+#1 0x5643891161e8 <unknown>
+#2 0x564389153972 <unknown>
+#3 0x5643891514d2 <unknown>
+#4 0x56438914eb64 <unknown>
+#5 0x56438914d902 <unknown>
+#6 0x5643891414a9 <unknown>
+#7 0x564389169f42 <unknown>
+#8 0x564389140d63 <unknown>
+#9 0x56438916a04e <unknown>
+#10 0x56438917d224 <unknown>
+#11 0x564389169e33 <unknown>
+#12 0x56438913f71a <unknown>
+#13 0x564389140875 <unknown>
+#14 0x5643893fbe1d <unknown>
+#15 0x5643893ff751 <unknown>
+#16 0x5643893e607e <unknown>
+#17 0x564389400388 <unknown>
+#18 0x5643893dafe0 <unknown>
+#19 0x56438941c748 <unknown>
+#20 0x56438941c8c8 <unknown>
+#21 0x56438943670d <unknown>
+#22 0x7fe7f6ebc609 <unknown>
+
+
+======================================================================
+ERROR [3.086647s]: AssessmentArea.ASSESSMENTAREA.test_switchOff
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/AssessmentArea.py", line 177, in test_switchOff
+    newArea.click()
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webelement.py", line 410, in _execute
+    return self._parent.execute(command, params)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium capitalize ml-6 px-6 css-1ezic79" tabindex="0" type="button">...</button> is not clickable at point (831, 201). Other element would receive the click: <h2 class="MuiTypography-root MuiTypography-h6 MuiDialogTitle-root dailog-heading css-xenwt2" id=":rl:">...</h2>
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x5643893b7533 <unknown>
+#1 0x5643891161e8 <unknown>
+#2 0x564389153972 <unknown>
+#3 0x5643891514d2 <unknown>
+#4 0x56438914eb64 <unknown>
+#5 0x56438914d902 <unknown>
+#6 0x5643891414a9 <unknown>
+#7 0x564389169f42 <unknown>
+#8 0x564389140d63 <unknown>
+#9 0x56438916a04e <unknown>
+#10 0x56438917d224 <unknown>
+#11 0x564389169e33 <unknown>
+#12 0x56438913f71a <unknown>
+#13 0x564389140875 <unknown>
+#14 0x5643893fbe1d <unknown>
+#15 0x5643893ff751 <unknown>
+#16 0x5643893e607e <unknown>
+#17 0x564389400388 <unknown>
+#18 0x5643893dafe0 <unknown>
+#19 0x56438941c748 <unknown>
+#20 0x56438941c8c8 <unknown>
+#21 0x56438943670d <unknown>
+#22 0x7fe7f6ebc609 <unknown>
+
+
+======================================================================
+ERROR [0.000000s]: tearDownClass (Raters.RATERS)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/Raters.py", line 312, in tearDownClass
+    with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+  File "/usr/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+======================================================================
+FAIL [7.622662s]: Login.LOGIN.test_enterkey
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/Login.py", line 148, in test_enterkey
+    self.assertEqual(cur_url, expected_url, "not equal")
+AssertionError: 'http://192.168.10.60:3000/sign-in' != 'http://192.168.10.60:3000/'
+- http://192.168.10.60:3000/sign-in
+?                           -------
++ http://192.168.10.60:3000/
+ : not equal
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/Login.py", line 153, in test_enterkey
+    assert False
+AssertionError
+
+======================================================================
+FAIL [12.818361s]: Department.DEPARTMENT.test_255Title
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/Department.py", line 126, in test_255Title
+    assert False
+AssertionError
+
+======================================================================
+FAIL [12.776918s]: Designation.DESIGNATION.test_255Title
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/Designation.py", line 126, in test_255Title
+    assert False
+AssertionError
+
+======================================================================
+FAIL [8.545867s]: Raters.RATERS.test_bothSwitchOff
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/Raters.py", line 302, in test_bothSwitchOff
+    assert False
+AssertionError
+
+----------------------------------------------------------------------
+Ran 53 tests in 0:14:05
+
+FAILED
+ (Failures=4, Errors=12)
+
+Generating HTML reports... 
+reports/TestResults_Login.LOGIN_2022-11-26_15-00-34.html
+reports/TestResults_Competency.COMPETENCY_2022-11-26_15-00-34.html
+reports/TestResults_Questions.QUESTIONS_2022-11-26_15-00-34.html
+reports/TestResults_Employee.EMPLOYEE_2022-11-26_15-00-34.html
+reports/TestResults_StandardResponse.STANDARDRESPONSE_2022-11-26_15-00-34.html
+reports/TestResults_Department.DEPARTMENT_2022-11-26_15-00-34.html
+reports/TestResults_Designation.DESIGNATION_2022-11-26_15-00-34.html
+reports/TestResults_Raters.RATERS_2022-11-26_15-00-34.html
+reports/TestResults_AssessmentArea.ASSESSMENTAREA_2022-11-26_15-00-34.html
+reports/TestResults_tearDownClass (Raters_2022-11-26_15-00-34.html

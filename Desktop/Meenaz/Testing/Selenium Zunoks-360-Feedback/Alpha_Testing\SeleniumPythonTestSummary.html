@@ -1,0 +1,60 @@
+
+Running tests... 
+----------------------------------------------------------------------
+
+======================================================================
+ERROR [0.000000s]: setUpClass (Login.LOGIN)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fladdra/Desktop/Meenaz/Testing/Selenium Zunoks-360-Feedback/Alpha_Testing/HR_Manager/Login.py", line 25, in setUpClass
+    self.driver.get("http://192.168.10.60:3000/sign-in")
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 455, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "/home/fladdra/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=101.0.4951.64)
+Stacktrace:
+#0 0x560406b23533 <unknown>
+#1 0x5604068821e8 <unknown>
+#2 0x56040686e105 <unknown>
+#3 0x56040686db65 <unknown>
+#4 0x56040686d025 <unknown>
+#5 0x56040686bd1f <unknown>
+#6 0x56040686c2ac <unknown>
+#7 0x56040687bce5 <unknown>
+#8 0x56040686d8b6 <unknown>
+#9 0x56040686e7cb <unknown>
+#10 0x56040686db82 <unknown>
+#11 0x56040686d025 <unknown>
+#12 0x56040686bd1f <unknown>
+#13 0x56040686c152 <unknown>
+#14 0x560406883caa <unknown>
+#15 0x5604068e997f <unknown>
+#16 0x5604068d5f42 <unknown>
+#17 0x5604068e9224 <unknown>
+#18 0x5604068d5e33 <unknown>
+#19 0x5604068ab71a <unknown>
+#20 0x5604068ac875 <unknown>
+#21 0x560406b67e1d <unknown>
+#22 0x560406b6b751 <unknown>
+#23 0x560406b5207e <unknown>
+#24 0x560406b6c388 <unknown>
+#25 0x560406b46fe0 <unknown>
+#26 0x560406b88748 <unknown>
+#27 0x560406b888c8 <unknown>
+#28 0x560406ba270d <unknown>
+#29 0x7f6049349609 <unknown>
+
+
+----------------------------------------------------------------------
+Ran 0 tests in 0:00:10
+
+FAILED
+ (Errors=1)
+
+Generating HTML reports... 
+reports/TestResults_setUpClass (Login_2022-11-26_15-22-39.html

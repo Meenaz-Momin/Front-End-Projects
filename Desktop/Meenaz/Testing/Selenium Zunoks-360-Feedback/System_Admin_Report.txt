@@ -1,0 +1,25 @@
+Login Test: Pass	 Date:17/11/2022 12:15:26
+Add Competency: Fail	 Date:17/11/2022 12:17:51
+Add Competency: Pass	 Date:17/11/2022 12:29:59
+Add Assessment Area: Pass	 Date:17/11/2022 12:50:45
+Add Industry: Pass	 Date:17/11/2022 12:54:17
+Add Industry: Fail	 Date:17/11/2022 12:55:07
+Add Question: Fail	 Date:17/11/2022 12:59:28
+Add Question: Pass	 Date:17/11/2022 13:01:53
+Add Tenant: Fail	 Date:17/11/2022 15:23:44
+Add Tenant: Fail	 Date:17/11/2022 15:24:08
+Add Tenant: Pass	 Date:17/11/2022 15:24:53
+Delete Assessment Area: Fail	 Date:18/11/2022 14:42:47
+Delete Assessment Area: Pass	 Date:18/11/2022 14:43:54
+Delete Competency: Fail	 Date:18/11/2022 14:47:54
+Delete Competency: Fail	 Date:18/11/2022 14:48:51
+Delete Industry: Fail	 Date:18/11/2022 14:52:19
+Delete Industry: Fail	 Date:18/11/2022 14:53:02
+Delete User: Fail	 Date:18/11/2022 15:00:34
+Delete User: Pass	 Date:18/11/2022 15:01:16
+Edit Area Assessed: Fail	 Date:18/11/2022 16:52:07
+Edit Area Assessed: Pass	 Date:18/11/2022 16:52:38
+Edit Industry: Pass	 Date:18/11/2022 16:55:37
+Delete Competency: Fail	 Date:18/11/2022 17:27:34
+Delete Competency: Fail	 Date:18/11/2022 17:31:38
+Delete Competency: Fail	 Date:19/11/2022 13:49:40
