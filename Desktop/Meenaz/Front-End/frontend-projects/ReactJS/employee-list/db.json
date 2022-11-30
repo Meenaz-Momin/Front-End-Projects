@@ -1,0 +1,18 @@
+{
+  "employee": [
+    {
+      "id": "102",
+      "name": "Sana",
+      "number": "9582147630",
+      "designation": "Tester",
+      "address": "Hadapsar"
+    },
+    {
+      "id": "101",
+      "name": "Meenaz",
+      "number": "1234567890",
+      "designation": "Intern",
+      "address": "Kondhwa"
+    }
+  ]
+}

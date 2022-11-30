@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="header">
+        <h1>Tic Tac Toe</h1>
+      </section>
+      <section class="turn">
+        <span class="player playerx" id="turn"> Player X 's Turn</span>
+      </section>
+      <section class="board">
+        <input
+          type="text"
+          id="b1"
+          class="tile"
+          onclick="myfunc_3(); myfunc();"
+        />
+        <input
+          type="text"
+          id="b2"
+          class="tile"
+          onclick="myfunc_4(); myfunc();"
+        />
+        <input
+          type="text"
+          id="b3"
+          class="tile"
+          onclick="myfunc_5(); myfunc();"
+        />
+        <input
+          type="text"
+          id="b4"
+          class="tile"
+          onclick="myfunc_6(); myfunc();"
+        />
+        <input
+          type="text"
+          id="b5"
+          class="tile"
+          onclick="myfunc_7(); myfunc();"
+        />
+        <input
+          type="text"
+          id="b6"
+          class="tile"
+          onclick="myfunc_8(); myfunc();"
+        />
+        <input
+          type="text"
+          id="b7"
+          class="tile"
+          onclick="myfunc_9(); myfunc();"
+        />
+        <input
+          type="text"
+          id="b8"
+          class="tile"
+          onclick="myfunc_10();myfunc();"
+        />
+        <input
+          type="text"
+          id="b9"
+          class="tile"
+          onclick="myfunc_11();myfunc();"
+        />
+      </section>
+      <section class="display hide" id="announcer"></section>
+      <section class="btn">
+        <button id="reset" onclick="myfunc_2();">Reset</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
